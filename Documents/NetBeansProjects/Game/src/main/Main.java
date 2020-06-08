@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class Main extends Application {
-///
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/view/Level1.fxml"));
@@ -20,7 +20,7 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root));
         //    primaryStage.setWidth(600);
         // primaryStage.setHeight(400);
-        //primaryStage.setResizable(false);
+        primaryStage.setResizable(false);
         primaryStage.getIcons().add(new Image(Main.class.getResourceAsStream("/image/Untitled-4.png")));
 
         primaryStage.show();
